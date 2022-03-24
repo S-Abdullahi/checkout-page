@@ -293,9 +293,7 @@ input:focus{
     margin-left: 70px;
   }  
 
-  body{
-    /* margin: 0 70px; */
-  }
+ 
 
   .outside-con{
     display: flex;
@@ -307,12 +305,10 @@ input:focus{
   .container{
     width: 100%;
     max-width: 600px;
-    background-color: lime;
   }
 
   .con-checkout{
-    background-color: green;
-    width: 100%; 
+   width: 100%; 
   }
 
   .checkout{
