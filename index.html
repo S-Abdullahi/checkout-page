@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<title>Title in the tab</title>
+
+		<!-- external CSS link -->
+		<script src="https://kit.fontawesome.com/c31a3ebc2d.js" crossorigin="anonymous"></script>
+		<script src="https://use.fontawesome.com/ce2a0143e8.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1>Check Out</h1>
+			</div>
+		</header>
+
+		<!-- checkout section -->
+		<div class="outside-con">
+		<div class="container checkout">
+			<div class="con-checkout">
+				<!-- product container -->
+				<div class="con-product">
+					<!-- image container -->
+					<div class="con-image">
+						<img src="photo1.png" alt="">
+					</div>
+					<!-- product detail container -->
+					<div class="con-product-details">
+						<span>Vintage Backbag</span>
+						<div>
+							<span class="new-price new-price-one">$54.99</span>
+							<span class="old-price">$94.99</span>
+						</div>
+						
+						<!-- plus and minus container -->
+						<div class="con-plus-minus">
+							<button value="-1" id="minus">-</button>
+							<span id="order-no-1">0</span>
+							<button value="+1" id="plus">+</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Second product -->
+
+				<div class="con-product">
+					<!-- image container -->
+					<div class="con-image">
+						<img src="photo2.png" alt="">
+					</div>
+					<!-- product detail container -->
+					<div class="con-product-details">
+						<span>Levie Shoes</span>
+						<div>
+							<span class="new-price">$74.99</span>
+							<span class="old-price">$124.99</span>
+						</div>
+						
+						<!-- plus and minus container -->
+						<div class="con-plus-minus">
+							<button value="-1" id="minus-2">-</button>
+							<span id="order-no-2">0</span>
+							<button value="+1" id="plus-2">+</button>
+						</div>
+					</div>
+				</div>
+			
+
+		
+
+			<!-- shipping and total section -->
+				<div class="total-checkout">
+					<hr>
+					<!-- shipping container -->
+					<div class="shipping">
+						<span>Shipping</span>
+						<span>$19</span>
+					</div>
+					<hr>
+					<!-- total container -->
+					<div class="shipping total">
+						<span>Total</span>
+						<span id="total">0</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- pop up messge -->
+		<div class="popup">
+			<div class="overlay">
+				<div class="content">
+					<div class="close-btn">X</div>
+					<h2>success!</h2>
+				</div>
+			</div>
+		</div>
+		
+
+		<form action="" class="container" name="checkOutForm">
+			<!-- error message holder -->
+			<p class="show"></p>
+
+			<!-- contact information fieldset			 -->
+			<fieldset>
+				<legend>Contact information</legend>
+				<label for="email">E-mail</label><br>
+				<input type="text" class="" name="email" id="email" size="20" maxlength="250" placeholder="&#xf0e0; Enter your email..."><br>
+				
+				<label for="phone">Phone</label><br>
+				<input type="text" name="phone" id="phone"  size="20" maxlength="11" placeholder="&#xf095; Enter your phone..."><br>
+			</fieldset>
+
+			<!-- shipping address fieldset -->
+			<fieldset>
+				<legend>Shipping address</legend>
+				<label for="fullName">Full name</label><br>
+				<input type="text" name="fullName" id="fullName" placeholder="&#xf2bd; Abdullahi Salawu"><br>
+
+				<label for="address">Address</label><br>
+					<input type="text" name="address" id="address" placeholder="&#xf015; Your address... "><br>
+
+				<label for="city">City</label><br>
+				<input type="text" name="city" id="city" placeholder="&#xf64f; Your city..."><br>
+
+				<!-- container for country and postal -->
+				<div class="country-postal">
+					<div>
+						<label for="country">Country</label><br><div>
+						<select name="selCountry" id="country" name="country">
+							<option value="">Your Country</option>
+							<option value="Nigeria">Nigeria</option>
+							<option value="Ghana">Ghana</option>
+							<option value="Togo">Togo</option>
+						</select>
+					</div>
+	
+					<div>
+						<label for="postal" >Postal code</label><br>
+						<input type="text" name="postal" id="postal" placeholder="&#xf658; Your postal code...">
+					</div>
+				</div>		
+			</fieldset>
+
+			<!-- checkout to save information  -->
+			<div class="chkout">
+				<input type="checkbox" value="" id="chkout">
+				<label for="chkout">save this information for next time</label><br>
+			</div>
+
+			<!-- continue button -->
+			<div class="continue-container">
+				<button type="submit" id="continue" name="submit">Continue</button>
+			</div>
+			
+		</form>
+
+		</div>
+
+			
+		<footer>
+			<span>Developed by: <a href="https://github.com/S-Abdullahi"><i class="fa-brands fa-github"></i></a>S-Abdullahi</span>
+		</footer>
+		
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

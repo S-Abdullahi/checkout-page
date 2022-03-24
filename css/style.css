@@ -1,0 +1,410 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.container{
+  padding: 0 10px;
+  margin:auto;
+  position:relative;
+  width: 100%;
+  max-width: 450px;
+}
+
+.con-checkout{
+  max-width: 400px;
+  height: 489px;
+  border-radius: 12px;
+  background-color: #F2F2F2;
+  margin-bottom: 60px;
+  padding: 20px;
+}
+
+.con-product{
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+  
+}
+
+.con-image{
+  height: 125px;
+  width: 125px;
+  margin-right: 30px;
+ 
+}
+
+.con-product-details{
+  position: relative;
+}
+
+.con-product-details > div{
+  margin-top: 5px;
+}
+
+.con-plus-minus{
+  position: absolute;
+  bottom: 0;
+  width: 123px;
+  height: 50px;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* plus and minus button styling */
+.con-plus-minus button{
+  background-color: #E0E0E0;
+  height: 19.5px;
+  width: 19.5px;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+input[value="-"], input[value="+"]{
+  color: #828282;
+}
+
+img{
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.total-checkout{
+  position: absolute;
+  bottom: 20px;
+  width: 85%;
+  max-width: 350px;
+  margin-right: 50px;  
+}
+
+hr{
+  color: #BDBDBD;
+}
+
+/* TEXT STYLING */
+/* product name */
+.con-product-details > span{
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+/* product price */
+.con-product-details > div span{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.new-price{
+  color: orange;
+  margin-right: 10px;
+}
+
+.old-price{
+  text-decoration: line-through;
+}
+
+/* shipping and total text */
+.shipping{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  font-weight: 600;
+}
+
+
+/* ************************/
+/* FORM STYLING */
+fieldset{
+  border: 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+fieldset:nth-child(1){
+  margin-bottom: 20px;
+}
+
+fieldset input, select{
+  width: 100%;
+  height: 40px;
+  margin-bottom: 15px;
+  margin-top: 3px;
+  border:1px solid #828282 ;
+  border-radius: 12px;
+}
+
+/* country and postal form sitting side by side */
+.country-postal{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5px;
+}
+
+
+/* FORM TEXT STYLING */
+
+legend{
+  size: 14px;
+  line-height: 17px;
+  color: #333333;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+label{
+  font-size: 10px;
+  color: #4f4f4f;
+  line-height: 12px;
+  font-weight: 600;
+}
+
+input{
+  padding-left: 15px;
+}
+
+/* country dropdown styling */
+select{
+  font-size: 10px;
+  padding-left: 20px;
+}
+
+select option{
+  color: #828282
+}
+
+/* check out to save information */
+.chkout{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+.chkout input{
+  border-radius: 4px;
+  color: #828282;
+}
+
+.chkout input{
+  margin-right: 5px;
+}
+
+/* continue button */
+.continue-container{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+
+#continue{
+  width: 166px;
+  height: 54px;
+  border: 0;
+  border-radius: 12px;
+  background-color: orange;
+  color: white;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+
+/* FOOTER STYLING */
+footer{
+  margin-top:50px ;
+  text-align: center;
+  font-size: 10px;
+  margin-bottom: 20px;
+  color: #828282;
+}
+
+footer a{
+  color: #828282;
+  margin-right: 5px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* placehoder styling */
+
+input::placeholder{
+  font-size: 6px;
+  font-family: FontAwesome, 'Montserrat', sans-serif;
+  padding-left: 8px;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+}
+
+
+/* hover and focus */
+
+input:hover, select:hover{
+  border: 1px solid orange;
+}
+
+input:focus{
+  outline: 0.5px solid orange;
+  transition: all 0.5s ease-in-out;
+  outline-width: 1px;
+}
+
+#continue:hover{
+  background-color: white;
+  color: orange;
+  border: solid 1px orange;
+  transition: all 0.4s ease-in-out;
+}
+
+
+/* MEDIA QUERIES */
+@media (min-width:834px){
+
+  header .container{
+    /* margin-left: 10vw; */
+    margin-left: 70px;
+  }  
+
+  body{
+    /* margin: 0 70px; */
+  }
+
+  .outside-con{
+    display: flex;
+    flex-direction:row-reverse ;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .container{
+    width: 100%;
+    max-width: 600px;
+    background-color: lime;
+  }
+
+  .con-checkout{
+    background-color: green;
+    width: 100%; 
+  }
+
+  .checkout{
+    margin-top: 0;
+    margin-left: 30px;
+  }
+
+  fieldset{
+    max-width: 500px;
+  }
+
+  .total-checkout{
+   margin-bottom: 60px;
+  padding: 0;
+  }
+  
+  hr{
+    max-width: 350px;
+    margin-right: auto;
+    margin-left: 0; 
+    color: #BDBDBD;
+  }
+  
+}
+
+/* JAVA SCRIPT */
+/*ERROR MESSAGE PLACEMENT*/
+
+
+p{
+  padding-left: 10px;
+  color: red;
+}
+
+.popup .overlay{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0,0, 0.7);
+  z-index: 5;
+}
+
+.content{
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  height: 100px;
+  width: 200px;
+  border: solid 1px orange;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in;
+  background-color: white;
+  transform: scale(0);
+  box-shadow: 4px 6px 10px -4px rgba(255,165,0,0.5);
+  z-index: 10;
+
+}
+
+.close-btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 20px;
+  width: 20px;
+  border: 1px solid orange;
+  border-radius: 50%;
+  background-color:white;
+  color: orange;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.content h2{
+  font-size: 24px;
+  color: orange;
+}
+
+.popup.active .overlay{
+  display: block;
+}
+
+.popup.active .content{
+  transition: all 0.5s ease-in-out;
+  transform: scale(1);
+}
